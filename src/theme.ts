@@ -9,7 +9,8 @@ export const theme = {
             dark: '#870000',
         },
         background: {
-            main: '#dddddd',
+            main: '#E2F5FF',
+            opposite: '#FFEEEE',
         },
     },
     spacing: (n: number) => `${n * 8}px`,

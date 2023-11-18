@@ -13,7 +13,9 @@ export const Land = () => {
                     <SBlueText>maker</SBlueText>
                 </STitle>
                 <SImage src={src} />
-                <EnterButton>Start creating cards for free</EnterButton>
+                <EnterButton href="https://sizefire.com/service?a=service&techTree=CARD_MAKER">
+                    Start creating cards for free
+                </EnterButton>
             </SContent>
             <SBottom>Features</SBottom>
         </SContainer>
@@ -21,14 +23,14 @@ export const Land = () => {
 };
 
 const SContainer = styled.div`
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     position: relative;
     background-color: ${theme.colors.primary.main};
 `;
 
 const SContent = styled.div`
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     position: absolute;
     display: flex;
@@ -73,7 +75,7 @@ const EnterButton = styled.a`
 `;
 
 const SGradientA = styled.div`
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     position: absolute;
     left: 0;
@@ -86,7 +88,7 @@ const SGradientA = styled.div`
 `;
 
 const SGradientB = styled.div`
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     position: absolute;
     left: 0;
@@ -99,7 +101,7 @@ const SGradientB = styled.div`
 `;
 
 const SBottom = styled.div`
-    width: 100vw;
+    width: 100%;
     height: 50px;
     position: absolute;
     bottom: 0;
