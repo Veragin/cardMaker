@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import { theme } from './theme';
 import src from './assets/cards.png';
+import { LinkButton } from 'LinkButton';
 
 export const Land = () => {
     return (
@@ -13,9 +14,9 @@ export const Land = () => {
                     <SBlueText>maker</SBlueText>
                 </STitle>
                 <SImage src={src} />
-                <EnterButton href="https://sizefire.com/service?a=service&techTree=CARD_MAKER">
+                <LinkButton href="https://sizefire.com/service?a=service&techTree=CARD_MAKER">
                     Start creating cards for free
-                </EnterButton>
+                </LinkButton>
             </SContent>
             <SBottom>Features</SBottom>
         </SContainer>
@@ -57,21 +58,6 @@ const SBlueText = styled.span`
 
 const SImage = styled.img`
     height: 40%;
-`;
-
-const EnterButton = styled.a`
-    border: 0;
-    background-color: ${theme.colors.primary.main};
-    color: ${theme.colors.primary.dark};
-    padding: ${theme.spacing(1)} ${theme.spacing(2)};
-    cursor: pointer;
-    border-radius: ${theme.borderRaduis(1)};
-    text-decoration: none;
-    font-size: 30px;
-
-    &:hover {
-        background-color: ${theme.colors.secondary.main};
-    }
 `;
 
 const SGradientA = styled.div`

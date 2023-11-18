@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import { Land } from './Land';
 import { theme } from './theme';
+import { LinkButton } from 'LinkButton';
 
 export const App = () => {
     return (
@@ -67,6 +68,18 @@ export const App = () => {
                         <li>Hold ctrl and drag move the screen around</li>
                     </SServiceBox>
                 </SList>
+
+                <STitle>Image pipeline</STitle>
+                <STopList>
+                    <li> Our another service that can modify images by your setup</li>
+                    <li> Useful for adjusting only one or multiple images</li>
+                    <li> Its for free</li>
+                </STopList>
+                <STitle>
+                    <SLinkButton href="https://pipeline.sizefire.com/">
+                        Visit image pipeline
+                    </SLinkButton>
+                </STitle>
             </SContainer>
         </SBody>
     );
@@ -75,7 +88,7 @@ export const App = () => {
 const SBody = styled.div`
     width: 100%;
     background-color: ${theme.colors.background.main};
-    padding-bottom: ${theme.spacing(3)};
+    padding-bottom: ${theme.spacing(6)};
 `;
 
 const SContainer = styled.div`
@@ -127,4 +140,8 @@ const SServiceTitle = styled.span`
     display: flex;
     font-size: 20px;
     padding-bottom: ${theme.spacing(1)};
+`;
+
+const SLinkButton = styled(LinkButton)`
+    margin: auto;
 `;
