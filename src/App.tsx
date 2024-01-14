@@ -1,9 +1,10 @@
 import styled from 'styled-components';
-import { Land } from './Land';
+import { Land } from './Parts/Land';
 import { theme } from './theme';
 import { LinkButton } from 'LinkButton';
 
-import { HowTo } from 'HowTo';
+import { HowTo } from 'Parts/HowTo';
+import { Tutorials } from 'Parts/Tutorials';
 
 export const App = () => {
     return (
@@ -19,6 +20,7 @@ export const App = () => {
                     <li> Export cards as images or pdf</li>
                     <li> Its for free</li>
                 </STopList>
+                <Tutorials />
                 <STitle>How to use the service</STitle>
                 <HowTo />
 

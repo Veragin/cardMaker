@@ -1,6 +1,6 @@
 import styled from 'styled-components';
-import { theme } from './theme';
-import src from './assets/cards.png';
+import { theme } from '../theme';
+import src from 'assets/cards.png';
 import { LinkButton } from 'LinkButton';
 
 export const Land = () => {

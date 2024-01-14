@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { theme } from 'theme';
-import excelSrc from './assets/excel.png';
-import sheetIdSrc from './assets/sheetId.png';
+import excelSrc from 'assets/excel.png';
+import sheetIdSrc from 'assets/sheetId.png';
 
 export const HowTo = () => {
     return (
