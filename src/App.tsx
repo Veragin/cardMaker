@@ -12,10 +12,11 @@ export const App = () => {
             <Land />
             <SContainer>
                 <STopList>
-                    <li> Possibility to load already created cards as images</li>
                     <li> Create you own card design with advanced editor</li>
                     <li> Load data from google sheets</li>
                     <li> Easily copy and adjust new card</li>
+                    <li> Save your project easily in your browser to open it later</li>
+                    <li> Possibility to load already created cards as images</li>
                     <li> Globaly edit all created cards</li>
                     <li> Export cards as images or pdf</li>
                     <li> Its for free</li>

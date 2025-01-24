@@ -8,13 +8,14 @@ export const HowTo = () => {
         <SList>
             <SServiceBox>
                 <SServiceTitle>File Loader</SServiceTitle>
-                <li> Use drag and drop to add image files as a cards </li>
+                <li> Load already created image files as a cards </li>
+                <li> Load your fonts to use them later </li>
                 <li>
-                    You can load data from google sheets and create cards from them, look at How to
-                    load data from Google Sheet section
+                    Load data from google sheets and create cards from them, look at How to load
+                    data from Google Sheet section
                 </li>
-                <li> You can remove here not wanted cards </li>
-                <li> You can upload a card structure, you did exported in the past </li>
+                <li> Load images to cards according to google sheet</li>
+                <li> Remove not wanted cards in the left panel</li>
             </SServiceBox>
             <SServiceBox>
                 <SServiceTitle>Card Maker</SServiceTitle>
@@ -96,18 +97,23 @@ export const HowTo = () => {
                 <li>In the first row write the names of the elements</li>
                 <li>
                     In the second row write the types of the elements (you can choose "text",
-                    "polygon" or "ellipse")
+                    "image" "polygon" or "ellipse")
                 </li>
+                <li>As an image write file name</li>
                 <li>
                     Next rows fill with the data (each row represents a card, each column represents
                     element in the card)
                 </li>
-                <li>Empty cell means that the element will be missing</li>
+                <li>Empty cell means that the element will be skipped</li>
                 <li>Example:</li>
                 <SImg src={excelSrc} />
                 <li>In Card Maker service in File Loader press "Load google sheet" button</li>
                 <li>Copy sheet id from the url and fill it in the Google Sheet Id field</li>
                 <SImg src={sheetIdSrc} />
+                <li>
+                    At the end use the button "Load images by google sheet" and select images to
+                    use. Images will be placed on the places defined by loaded google sheet
+                </li>
             </SServiceBox>
         </SList>
     );
