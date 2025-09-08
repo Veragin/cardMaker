@@ -14,7 +14,7 @@ export const Land = () => {
                     <SBlueText>maker</SBlueText>
                 </STitle>
                 <SImage src={src} />
-                <LinkButton href="https://sizefire.com/service?a=service&techTree=CARD_MAKER">
+                <LinkButton href="https://service.veragin.com?a=service&techTree=CARD_MAKER">
                     Start creating cards for free
                 </LinkButton>
             </SContent>
