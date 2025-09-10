@@ -25,16 +25,12 @@ export const App = () => {
                 <STitle>How to use the service</STitle>
                 <HowTo />
 
-                <STitle>Image pipeline</STitle>
+                <STitle>Other services</STitle>
                 <STopList>
-                    <li> Our another service that can modify images by your setup</li>
-                    <li> Useful for adjusting only one or multiple images</li>
-                    <li> Its for free</li>
+                    <li> Visit crossroad and try our other services</li>
                 </STopList>
                 <STitle>
-                    <SLinkButton href="https://pipeline.sizefire.com/">
-                        Visit image pipeline
-                    </SLinkButton>
+                    <SLinkButton href="https://veragin.com/">Visit crossroad</SLinkButton>
                 </STitle>
             </SContainer>
         </SBody>
